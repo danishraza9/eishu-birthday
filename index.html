@@ -225,18 +225,30 @@
     </audio>
 
     <script>
+        // Auto-play music when the page loads
+        const birthdayMusic = document.getElementById('birthdayMusic');
+        
+        window.addEventListener('load', () => {
+            birthdayMusic.play().catch(error => {
+                console.log("Browser blocked autoplay, waiting for user interaction.");
+                // Fallback: play on first click anywhere on the page
+                document.body.addEventListener('click', () => {
+                    birthdayMusic.play();
+                }, { once: true });
+            });
+        });
+
         // Surprise Button Functionality
         const surpriseBtn = document.getElementById('surpriseBtn');
         const birthdayCard = document.getElementById('birthdayCard');
         const closeCard = document.getElementById('closeCard');
-        const birthdayMusic = document.getElementById('birthdayMusic');
 
         surpriseBtn.addEventListener('click', () => {
             // Show the card
             birthdayCard.classList.remove('hidden');
 
-            // Play music (optional)
-            birthdayMusic.play().catch(e => console.log("Auto-play was prevented"));
+            // Ensure music is playing
+            birthdayMusic.play().catch(e => console.log("Audio play error"));
 
             // Create confetti effect
             createConfetti();
@@ -244,7 +256,8 @@
 
         closeCard.addEventListener('click', () => {
             birthdayCard.classList.add('hidden');
-            birthdayMusic.pause();
+            // Music keeps playing in background, but if you want to pause on close, uncomment below:
+            // birthdayMusic.pause();
         });
 
         function createConfetti() {
