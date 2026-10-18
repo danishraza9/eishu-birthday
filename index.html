@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Buddy "Ambri"!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f9d5e5 0%, #e2b0fc 100%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            color: #5a3a6e;
+        }
+
+        .dancing-font {
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .hero-text {
+            background: linear-gradient(to right, #ff4d8b, #8a2be2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .teddy-bear {
+            animation: bounce 2s infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-15px);
+            }
+        }
+
+        .memory-card {
+            transition: all 0.3s ease;
+        }
+
+        .memory-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-popup {
+            animation: popIn 0.5s ease-out forwards;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            80% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section with Animated Text -->
+        <section class="text-center py-12">
+            <h1 class="hero-text text-5xl md:text-7xl font-bold dancing-font mb-6">Happy Birthday Eishu❤️</h1>
+
+            <!-- Teddy Bear Animation -->
+            <div class="teddy-bear flex justify-center mb-8">
+                <img src="I:\Last Backup\Eishu (Ambri)\teddy and cake\teddy and cake.png"
+                    alt="Cute pink teddy bear with a birthday hat holding a heart-shaped balloon" class="w-64 h-auto" />
+            </div>
+
+            <!-- Birthday Message in Urdu/Roman Urdu -->
+            <div class="bg-white bg-opacity-70 rounded-xl p-6 max-w-2xl mx-auto shadow-lg">
+                <h2 class="text-2xl font-bold text-purple-800 mb-4">Pyari Ambri Ke Liye!</h2>
+
+                <p class="text-lg leading-relaxed">
+                    HAPPY BIRTHDAY EISHU / AMBRI! 🎉🎂<br>
+                    Sach bolun toh is poori dunya mein agar koi mera dimag khane ka official license rakhta hai, toh woh
+                    sirf aur sirf tum ho! 😂<br>
+                    Par maanna padega, jitni aafat tum ho, utni hi special aur pyari bhi ho mere liye. 🌸<br>
+                    Zindagi ke har complex workflow aur bug mein, tumhara yeh dost hamesha tumhare paas debugging ke
+                    liye khada milega. 🛠️❤️<br>
+                    Hamesha haste raho, aise hi sabka dimag khati raho, aur khoob tarakshi karo!<br>
+                    Bohot saara pyaar, masti, aur meharbaani kar ke ab toh milne aa jaao buddy ek arsa kya, aisa lagta
+                    hai zamana ho gaya hai mile hue! 🥺<br>
+                    Koi masti karein, kahin milen... lunch/dinner, parks, ghoomne-firne ke liye kitna kuch hai. Aur ek
+                    hi toh female friend hai, uske sath nahi karunga yeh sab toh phir kis ke sath karunga! 🥹🤍<br>
+                    Aap ka <strong>Hacker</strong> 💻🌹
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section class="py-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-purple-700 dancing-font">My Beautiful Memories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Memory 1 -->
+                <div class="memory-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="memory-image">
+                        <img src="I:\Last Backup\Eishu (Ambri)\pics\3.jpeg"
+                            alt=". laughing with friends at a birthday party with colorful balloons"
+                            class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h2 class="font-semibold text-lg">Eishu</h2>
+                        <p class="text-sm text-gray-600">My Secret keeper 👀🫣</p>
+                    </div>
+                </div>
+
+                <!-- Memory 2 -->
+                <div class="memory-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="memory-image">
+                        <img src="I:\Last Backup\Eishu (Ambri)\pics\2.jpeg"
+                            alt=". smiling at the beach with sunset in the background"
+                            class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Ambri</h3>
+                        <p class="text-sm text-gray-600">Itna kuch ker leya ab toh time nikalllllllll🥺💔</p>
+                    </div>
+                </div>
+
+                <!-- Memory 3 -->
+                <div class="memory-card bg-white rounded-xl overflow-hidden shadow-md">
+                    <div class="memory-image">
+                        <img src="I:\Last Backup\Eishu (Ambri)\pics\4.jpeg"
+                            alt="Group photo with . wearing a cute dress and posing with family"
+                            class="w-full h-48 object-cover" />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Pagal ❌ Charye ✅</h3>
+                        <p class="text-sm text-gray-600">Hamesha khush raho aur muje aise he tang ker te raho, mn tang
+                            hona chahta hn😂</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Button -->
+        <div class="text-center py-8">
+            <button id="surpriseBtn"
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transform transition-all hover:scale-105">
+                Click for a Special Surprise!
+            </button>
+        </div>
+
+        <!-- Hidden Birthday Card Popup -->
+        <div id="birthdayCard"
+            class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+            <div class="card-popup bg-white rounded-xl p-8 max-w-md mx-4 relative overflow-hidden"
+                style="background: linear-gradient(135deg, #fff7fb 0%, #ffeaf7 100%);">
+                <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-pink-500 to-purple-600"></div>
+                <button id="closeCard" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-purple-700 dancing-font mb-4">Once Again Happy Birthday Ambri!
+                    </h2>
+                    <img src="I:\Last Backup\Eishu (Ambri)\teddy and cake\cake2.png"
+                        alt="Hand-drawn birthday cake with candles and sparkles" class="mx-auto mb-4" />
+                    <p class="text-lg mb-6">
+                        Eishu/Ambri, sach batao... 2 mahine ho gaye hain humein aakhri baar milay aur coffee piye hue,
+                        matlab itna busy hone ka award milna chahiye kya tumhe? ☕😒<br>
+                        Maine abhi tumhari is website ke liye 285 lines ka code likha hai... manta hn AI hai 🫣😂 par is
+                        mn kuch mera bhe kaam hai 😂😂 iske baad itni mehnat par
+                        ek pyaari si coffee date toh deserve karta hi hoon na, yrr 🤭<br>
+                        Aur kitna time logi milne ke liye, please maan jao yaar... maan gayi na toh kasam se isse bhi
+                        behtareen tarah se treat karunga aur kum tang karo gah 🥺❤️<br>
+                    </p>
+                    <p class="font-semibold">
+                        Hamesha khush raho, abad raho, kamiyabi tumhare qadum choome... mera support hamesha tumhare
+                        sath hai aur main khud bhi! ❤️
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Element (hidden) -->
+    <audio id="birthdayMusic" loop>
+        <source src="I:\Last Backup\Eishu (Ambri)\music\music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Surprise Button Functionality
+        const surpriseBtn = document.getElementById('surpriseBtn');
+        const birthdayCard = document.getElementById('birthdayCard');
+        const closeCard = document.getElementById('closeCard');
+        const birthdayMusic = document.getElementById('birthdayMusic');
+
+        surpriseBtn.addEventListener('click', () => {
+            // Show the card
+            birthdayCard.classList.remove('hidden');
+
+            // Play music (optional)
+            birthdayMusic.play().catch(e => console.log("Auto-play was prevented"));
+
+            // Create confetti effect
+            createConfetti();
+        });
+
+        closeCard.addEventListener('click', () => {
+            birthdayCard.classList.add('hidden');
+            birthdayMusic.pause();
+        });
+
+        function createConfetti() {
+            const colors = ['#ff4d8b', '#8a2be2', '#ff6b6b', '#48dbfb', '#feca57'];
+            const container = document.querySelector('.container');
+
+            for (let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.top = '-10px';
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+                    container.appendChild(confetti);
+
+                    // Animation
+                    const animation = confetti.animate([
+                        { top: '-10px', opacity: 0 },
+                        { top: '10px', opacity: 1 },
+                        { top: '100vh', opacity: 0 }
+                    ], {
+                        duration: 2000 + Math.random() * 3000,
+                        easing: 'cubic-bezier(0.1, 0.8, 0.3, 1)'
+                    });
+
+                    animation.onfinish = () => confetti.remove();
+                }, Math.random() * 1000);
+            }
+        }
+    </script>
+</body>
+
+</html>
